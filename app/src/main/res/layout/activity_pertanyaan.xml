@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PertanyaanActivity">
+
+    <TextView
+        android:layout_margin="16dp"
+        android:text="NAMA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/DispName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pertanyaan"
+        android:id="@+id/tvque"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/answersgrp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DispName"
+        android:layout_alignStart="@+id/DispName"
+        android:id="@+id/answersgrp"
+        android:clickable="true"
+        android:layout_centerVertical="true">
+        <!--android:checkedButton="@+id/radioButton"-->
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:id="@+id/radioButton3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:id="@+id/radioButton4"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/answersgrp">
+
+        <Button
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:id="@+id/button3"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/answersgrp"
+            android:background="#FF5722"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanjut"
+            android:id="@+id/button4"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/answersgrp"
+            android:background="#FF5722"
+            android:textColor="#ffffff"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
